@@ -38,10 +38,20 @@
 			}
 		?>
 	</div><!-- .entry-content -->
-	<?php jgtazalea_entry_footer(); ?>
+	<div class="utilities group">
+			<ul class="social">
+				<li><a href="#" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="href="#"" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="href="#"" target="_blank" class="social-icon"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="href="#"" target="_blank" class="social-icon"><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+	</div>
 	<?php
 	if ( is_single() && ! is_attachment() && get_theme_mod( 'jgtazalea_show_author_box' ) ) :
 		get_template_part( 'template-parts/biography' );
 	endif;
 	?>
 </article><!-- #post-## -->
+
+<?php jgtazalea_entry_footer(); ?>
+<br>
